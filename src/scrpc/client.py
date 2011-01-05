@@ -14,15 +14,15 @@ class SCProxy(object):
 
     class RemoteError(Exception):
         def __init__(self, *args):
-            super(SCProxy.SCProxy.RemoteError, self).__init__(*args)
+            super(SCProxy.RemoteError, self).__init__(*args)
     
     class CommunicationError(Exception):
         def __init__ (self, *args):
-            super(SCProxy.SCProxy.CommunicationError , self).__init__(*args)
+            super(SCProxy.CommunicationError , self).__init__(*args)
     
     class MarshalingError(Exception):
         def __init__(self, *args):
-            super(SCProxy.SCProxy.MarshalingError, self).__init__(*args)
+            super(SCProxy.MarshalingError, self).__init__(*args)
     
     def __init__(self, address=('localhost', 3344)):
         super(SCProxy, self).__init__()
