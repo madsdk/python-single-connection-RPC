@@ -68,6 +68,7 @@ class TimedSocket(object):
                 raise ValueError('Invalid timeout period (%f)'%self.timeout)
         else:
             self.timeout = TimedSocket.TIMEOUT
+        self.sock.settimeout(self.timeout)
     
     def bind(self, address):
         """
